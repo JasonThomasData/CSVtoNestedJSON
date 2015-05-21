@@ -41,7 +41,8 @@ Becomes
 
     [{
       'name': 'this',
-      'details':{
+      'details':
+      {
         'year': 1999,
         'other': 'Kamchutka'
       },
