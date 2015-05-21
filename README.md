@@ -45,20 +45,20 @@ Becomes
 
     [    
         {
-        "FirstName" : "Joana",
-        "LastName" : "Dol'son",
-        "Age" : 39,
-        "Circumstances" : 
-        {
-            "What" : true,
-            "Why'sit" : 12,
-            "When" : 
+            "FirstName" : "Joana",
+            "LastName" : "Dol'son",
+            "Age" : 39,
+            "Circumstances" : 
             {
-                "latitude" : 123
-            },
-            "longitude" : 322
-        }
-    },
-    ......
-    ......
+                "What" : true,
+                "Why'sit" : 12,
+                "When" : 
+                {
+                    "latitude" : 123
+                },
+                "longitude" : 322
+            }
+        },
+        ......
+        ......
     ]
