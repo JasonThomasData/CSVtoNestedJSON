@@ -1,0 +1,41 @@
+[
+    "FirstName" : "Joana",
+    "LastName" : "Dol'son",
+    "Age" : 39,
+    "Circumstances" : 
+    {
+        "What" : true,
+        "Why'sit" : 12,
+        "When" : 
+        {
+            "latitude" : 123
+        },
+        "longitude" : 322
+    },
+    "FirstName" : "James",
+    "LastName" : "Bond",
+    "Age" : 29,
+    "Circumstances" : 
+    {
+        "What" : false,
+        "Why'sit" : 21,
+        "When" : 
+        {
+            "latitude" : 32
+        },
+        "longitude" : 322
+    },
+    "FirstName" : "Harry",
+    "LastName" : "Potter",
+    "Age" : 28,
+    "Circumstances" : 
+    {
+        "What" : true,
+        "Why'sit" : 12,
+        "When" : 
+        {
+            "latitude" : 123
+        },
+        "longitude" : 2
+    }
+]
