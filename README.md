@@ -6,6 +6,7 @@ To use this, add your behaviours etc to a csv file in the first row.
 
 All files become an array of objects by default.
 Each csv becomes a seperate object.
+The output JSON file is also prettified, so you can read it.
 
 Eg
 
