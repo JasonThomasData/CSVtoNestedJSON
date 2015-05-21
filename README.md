@@ -1,7 +1,7 @@
 # CSVtoNestedJSON
 
 A python 2.7.9 project that converts CSV files to nested JSON. 
-Files become prettified with objects in objects, arrays in objects, objects in arrays etc.
+Files become prettified with objects in objects.
 
 TO USE THE PYTHON FILE
 
@@ -33,7 +33,7 @@ Becomes
 If you want an object inside the object, add {} to your CSV file header.
 The opening { must have a word in front, and all {} brackets must be in their own columns.
 
-Eg
+Eg.
 
     name, details{, year, location, }, boolean
     this, ,1999, Kamchutka, , true
