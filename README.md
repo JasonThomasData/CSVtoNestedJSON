@@ -10,69 +10,45 @@ The output JSON file is also prettified, so you can read it.
 
 Eg
 
-name, year, location, boolean
-
-this, 1999, Kamchutka, heaps
-
-that, 1994, Ohio, notMuch
-
-other, 1998, Werribee, notYourBusiness
+    name, year, location, boolean
+    this, 1999, Kamchutka, heaps
+    that, 1994, Ohio, notMuch
+    other, 1998, Werribee, notYourBusiness
 
 Becomes 
 
-[{
-
-  'name': 'this',
-  
-  'year': 1999,
-  
-  'other': 'Kamchutka',
-  
-  'whatUp': true
-  
-},
-
-......
-
-......
-
-]
+    [{
+      'name': 'this',
+      'year': 1999,
+      'other': 'Kamchutka',
+      'whatUp': true
+    },
+    ......
+    ......
+    ]
 
 If you want an object inside the object, add {} to your CSV file header.
 The opening { must have a word in front, and all {} brackets must be in their own columns.
 
 Eg
 
-name, details{, year, location, }, boolean
-
-this, ,1999, Kamchutka, , true
-
-that, ,1994, Ohio, ,false
-
-other, ,1998, Werribee, ,true
+    name, details{, year, location, }, boolean
+    this, ,1999, Kamchutka, , true
+    that, ,1994, Ohio, ,false
+    other, ,1998, Werribee, ,true
 
 Becomes 
 
-[{
-
-  'name': 'this',
-  
-  'details':{
-  
-    'year': 1999,
-    
-    'other': 'Kamchutka'
-    
-  },
-  
-  'boolean': true
-  
-},
-
-......
-
-......
-
-]
+    [{
+      'name': 'this',
+      'details':{
+        'year': 1999,
+        'other': 'Kamchutka'
+      },
+      'boolean': true
+    },
+    ......
+    ......
+    ]
 
 TO DO - add the same behaviours for arrays.
