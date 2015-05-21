@@ -5,18 +5,18 @@ Files become prettified with objects in objects.
 
 TO USE THE PYTHON FILE
 
-Placec the csv in the same directory as the python script.
+Place the csv in the same directory as the python script.
 Import the script into IDLE.
 To make objects etc, add your behaviours etc to a csv file in the first row.
-All files become an array of objects by default.
+All files become an array of objects by default, but the curly brackets must be placed at first and last columns.
 Each csv becomes a seperate object.
 
 Eg.
 
-    name, year, location, boolean
-    this, 1999, Kamchutka, heaps
-    that, 1994, Ohio, notMuch
-    other, 1998, Werribee, notYourBusiness
+    {,name, year, location, boolean,}
+    ,this, 1999, Kamchutka, heaps,
+    ,that, 1994, Ohio, notMuch,
+    ,other, 1998, Werribee, notYourBusiness,
 
 Becomes 
 
@@ -35,21 +35,29 @@ The opening { must have a word in front, and all {} brackets must be in their ow
 
 Eg.
 
-    name, details{, year, location, }, boolean
-    this, ,1999, Kamchutka, , true
-    that, ,1994, Ohio, ,false
-    other, ,1998, Werribee, ,true
+    {,FirstName,LastName,Age,Circumstances{,What,Why”sit,When{,latitude,},longitude,},}
+    ,Joana,Dol”son,39,,TRUE,12,,123,,322,,
+    ,James,Bond,29,,FALSE,21,,32,,322,,
+    ,Harry,Potter,28,,true,12,,123,,2,,
+
 
 Becomes 
 
-    [{
-      'name': 'this',
-      'details':
-      {
-        'year': 1999,
-        'other': 'Kamchutka'
-      },
-      'boolean': true
+    [    
+        {
+        "FirstName" : "Joana",
+        "LastName" : "Dol'son",
+        "Age" : 39,
+        "Circumstances" : 
+        {
+            "What" : true,
+            "Why'sit" : 12,
+            "When" : 
+            {
+                "latitude" : 123
+            },
+            "longitude" : 322
+        }
     },
     ......
     ......
