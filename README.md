@@ -1,14 +1,17 @@
 # CSVtoNestedJSON
 
-A python project that converts CSV files to JSON. With objects in objects, arrays in objects, etc
+A python 2.7.9 project that converts CSV files to nested JSON. 
+Files become prettified with objects in objects, arrays in objects, objects in arrays etc.
 
-To use this, add your behaviours etc to a csv file in the first row.
+TO USE THE PYTHON FILE
 
+Placec the csv in the same directory as the python script.
+Import the script into IDLE.
+To make objects etc, add your behaviours etc to a csv file in the first row.
 All files become an array of objects by default.
 Each csv becomes a seperate object.
-The output JSON file is also prettified, so you can read it.
 
-Eg
+Eg.
 
     name, year, location, boolean
     this, 1999, Kamchutka, heaps
@@ -51,5 +54,3 @@ Becomes
     ......
     ......
     ]
-
-TO DO - add the same behaviours for arrays.
