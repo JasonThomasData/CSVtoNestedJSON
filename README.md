@@ -22,10 +22,10 @@ Becomes
 
     [
         {
-        'name': 'this',
-        'year': 1999,
-        'other': 'Kamchutka',
-        'boolean': true
+            'name': 'this',
+            'year': 1999,
+            'other': 'Kamchutka',
+            'boolean': true
         },
         ......
         ......
