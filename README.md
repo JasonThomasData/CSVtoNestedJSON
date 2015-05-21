@@ -14,20 +14,21 @@ Each csv becomes a seperate object.
 Eg.
 
     {,name, year, location, boolean,}
-    ,this, 1999, Kamchutka, heaps,
-    ,that, 1994, Ohio, notMuch,
-    ,other, 1998, Werribee, notYourBusiness,
+    ,this, 1999, Kamchutka, TRUE,
+    ,that, 1994, Ohio, FALSE,
+    ,other, 1998, Werribee, TRUE,
 
 Becomes 
 
-    [{
-      'name': 'this',
-      'year': 1999,
-      'other': 'Kamchutka',
-      'whatUp': true
-    },
-    ......
-    ......
+    [
+        {
+        'name': 'this',
+        'year': 1999,
+        'other': 'Kamchutka',
+        'boolean': true
+        },
+        ......
+        ......
     ]
 
 If you want an object inside the object, add {} to your CSV file header.
