@@ -1,0 +1,4 @@
+FirstName,LastName,Age,Circumstances{,What,Why”sit,When{,latitude,},longitude,}
+Joana,Dol”son,39,,TRUE,12,,123,,322,
+James,Bond,29,,FALSE,21,,32,,322,
+Harry,Potter,28,,TRUE,12,,123,,2,
